@@ -54,7 +54,7 @@ a{color:inherit}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
 .brand img{width:38px;height:38px;border-radius:10px}
 .brand span{font-weight:600;font-size:22px;letter-spacing:-.02em}
-.nav-links{display:flex;gap:30px;margin-left:8px}
+.nav-links{display:flex;gap:28px;margin-left:8px}
 .nav-links a{
   text-decoration:none;font-size:15px;font-weight:500;color:var(--ink);
   padding:27px 0;border-bottom:3px solid transparent;margin-bottom:-1px;
@@ -89,9 +89,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--mint);outline-offse
 
 /* ---------- hero ---------- */
 .hero{background:radial-gradient(900px 480px at 88% 10%,rgba(23,194,154,.10),transparent 60%),radial-gradient(800px 520px at 0% 100%,rgba(155,31,126,.08),transparent 60%),var(--lavender);overflow:hidden}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;font-weight:500;color:var(--violet);background:#fff;border:1px solid var(--lavender-deep);border-radius:999px;padding:6px 14px 6px 12px;margin-bottom:22px}
-.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px rgba(23,194,154,.18)}
-.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:78px 0 88px}
+.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-top:78px;padding-bottom:88px}
 .hero h1{
   font-size:clamp(34px,4.4vw,56px);line-height:1.13;font-weight:500;
   letter-spacing:-.025em;margin:0 0 22px;max-width:15ch;
@@ -140,9 +138,6 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--mint);outline-offse
 .proof-logo{font-size:17px;font-weight:500;color:var(--plum);opacity:.72}
 .proof-logo img{height:46px;width:auto;display:block}
 
-/* ---------- chevron motif ---------- */
-.chev{display:inline-block;width:15px;height:15px;flex-shrink:0;margin-top:6px}
-.chev svg{width:100%;height:100%;display:block}
 
 /* ---------- sections ---------- */
 section{padding:86px 0}
@@ -152,13 +147,14 @@ h2{font-size:clamp(27px,3.1vw,38px);line-height:1.22;font-weight:500;letter-spac
 .lead{font-size:18px;font-weight:300;color:var(--ink);margin:0;max-width:60ch}
 .sec-head{margin-bottom:46px}
 
-/* problem + model split */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:start}
-.pill-list{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:22px}
-.pill-list{gap:14px!important}
-.pill-list li{display:flex;gap:14px;background:#fff;border:1px solid var(--lavender-deep);border-radius:var(--radius);padding:18px 20px;box-shadow:0 2px 10px rgba(42,14,66,.03)}
-.pill-list strong{display:block;font-weight:500;font-size:17px;margin-bottom:2px}
-.pill-list span{color:var(--ink);font-size:15.5px;line-height:1.6}
+
+/* por qué SODET */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why-item{background:#fff;border:1px solid var(--lavender-deep);border-radius:var(--radius);padding:26px 24px}
+.why-ico{width:44px;height:44px;border-radius:12px;background:var(--lavender);color:var(--violet);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.why-ico svg{width:22px;height:22px}
+.why-item h3{font-size:18px;font-weight:500;margin:0 0 6px}
+.why-item p{font-size:15px;color:var(--ink);margin:0;line-height:1.6}
 
 /* product cards */
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
@@ -217,22 +213,6 @@ h2{font-size:clamp(27px,3.1vw,38px);line-height:1.22;font-weight:500;letter-spac
 .tabi-bars i.hi{background:#F2552C}
 .tabi-panel em{font-style:normal;font-size:5.5px;color:#B7791F}
 
-/* tarjeta Páginas web */
-.web-prev{flex-direction:column;background:#FCFBFE}
-.web-bar{display:flex;align-items:center;gap:4px;padding:4px 7px;background:#F7F4FB;border-bottom:1px solid var(--lavender-deep)}
-.web-bar i{width:5px;height:5px;border-radius:50%;background:#D9D2E4;display:block}
-.web-bar span{margin-left:5px;font-size:6.5px;color:var(--ink);background:#fff;border:1px solid var(--lavender-deep);border-radius:999px;padding:0 7px}
-.web-body{flex:1;padding:6px 9px;display:flex;flex-direction:column;gap:7px}
-.web-nav{display:flex;align-items:center;gap:5px}
-.web-nav b{width:22px;height:6px;border-radius:2px;background:var(--plum);display:block;margin-right:auto}
-.web-nav i{width:14px;height:4px;border-radius:2px;background:var(--lavender-deep);display:block}
-.web-nav u{width:24px;height:8px;border-radius:999px;background:var(--violet);display:block}
-.web-hero{flex:1;display:flex;gap:8px;align-items:center}
-.web-hero span{flex:1;display:flex;flex-direction:column;gap:4px}
-.web-hero strong{display:block;height:7px;border-radius:2px;background:var(--plum);width:92%}
-.web-hero strong.short{width:64%;background:var(--magenta)}
-.web-hero em{display:block;width:38px;height:9px;border-radius:999px;background:var(--mint);margin-top:3px}
-.web-img{width:42%;height:42px;border-radius:6px;background:linear-gradient(135deg,var(--lavender-deep),#D8CAEA)}
 
 /* secciones de casos (módulos y páginas web) */
 .case{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;background:#fff;border:1px solid var(--lavender-deep);border-radius:22px;padding:44px;box-shadow:0 2px 10px rgba(42,14,66,.03)}
@@ -309,8 +289,6 @@ h2{font-size:clamp(27px,3.1vw,38px);line-height:1.22;font-weight:500;letter-spac
 .cot-card span{font-size:7.5px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .cot-card q{quotes:none;font-size:6.5px;color:#3FD0CC}
 .cot-card q.rev{color:#F2C56B}
-.card-open{border-style:dashed;border-color:#C9B8E0;background:transparent}
-.card-open .tag{background:#fff;color:var(--magenta)}
 
 /* preview dentro de cada tarjeta */
 .prev{height:112px;border-radius:8px;overflow:hidden;border:1px solid var(--lavender-deep);margin-bottom:18px;display:flex}
@@ -444,6 +422,9 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
 .js .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
 .js .reveal.in{opacity:1;transform:none}
 
+@media (max-width:1080px){
+  .nav-right .plain{display:none}
+}
 @media (max-width:900px){
   .nav-links{display:none}
   .nav-right .plain{display:none}
@@ -451,7 +432,7 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
   .nav-in{height:68px;gap:16px}
   .nav-right{gap:10px}
   .nav-right .btn{padding:10px 20px;font-size:14px}
-  .hero-in{grid-template-columns:1fr;padding:44px 0 56px;gap:40px}
+  .hero-in{grid-template-columns:1fr;padding-top:44px;padding-bottom:56px;gap:40px}
   .art{padding:14px 0 6px}
   .dot-mint{width:78px;height:78px;right:0}
   .dot-violet{width:56px;height:56px;bottom:22px}
@@ -460,8 +441,8 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
   .shot-body{min-height:0}
   .hero h1{max-width:100%}
   section{padding:60px 0}
-  .split{grid-template-columns:1fr;gap:38px}
   .cards{grid-template-columns:1fr}
+  .why{grid-template-columns:1fr;gap:12px}
   .case{grid-template-columns:1fr;gap:32px;padding:30px 24px}
   .case-rev .case-shot{order:0}
   .case-top{grid-template-columns:1fr;gap:36px}
@@ -489,12 +470,27 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
   .proof-label{width:100%}
   .proof-logos{justify-content:center;gap:28px}
   .card{padding:24px 20px 26px}
+  section{padding:52px 0}
+  .sec-head{margin-bottom:30px}
+  .lead{font-size:16.5px}
+  .hero-in{padding-top:32px;padding-bottom:44px;gap:30px}
+  .dot-mint,.dot-violet,.dot-ring{display:none}
+  .why-item{padding:18px;display:grid;grid-template-columns:40px 1fr;column-gap:14px}
+  .why-ico{width:40px;height:40px;margin:0;grid-row:span 2}
+  .why-ico svg{width:20px;height:20px}
+  .why-item h3{font-size:16.5px;margin:0 0 2px}
+  .why-item p{font-size:14.5px}
+  .case-logo{height:42px;margin-bottom:14px}
+  .case-copy > p{font-size:15px}
+  .case-copy .btn,.card-cta{width:100%;text-align:center}
+  .case-mods div{padding:11px 13px}
+  .feat-title{margin-top:32px;padding-top:26px}
+  .shot-url{font-size:9.5px}
   .case{padding:24px 16px;border-radius:18px}
   .case-mods,.case-benefits{grid-template-columns:1fr}
   .case-stats{grid-template-columns:1fr;gap:10px}
   .ing-phone{width:118px}
   .case h3{font-size:21px}
-  .pill-list li{padding:16px}
   .foot-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;width:100%}
   footer{padding:40px 0 32px}
   .cta-form{padding:36px 16px 16px}
@@ -517,9 +513,10 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
       <span>SODET</span>
     </a>
     <nav class="nav-links">
-      <a href="#modelo">Cómo lo hacemos</a>
       <a href="#productos">Productos</a>
-      <a href="#proceso">Proceso</a>
+      <a href="#modulos">A la medida</a>
+      <a href="#paginas">Páginas web</a>
+      <a href="#proceso">Cómo trabajamos</a>
     </nav>
     <div class="nav-right">
       <a class="plain" href="#contacto">Contacto</a>
@@ -529,9 +526,10 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
   </div>
   <nav class="nav-mobile" id="navMobile" hidden>
     <div class="wrap">
-      <a href="#modelo">Cómo lo hacemos</a>
       <a href="#productos">Productos</a>
-      <a href="#proceso">Proceso</a>
+      <a href="#modulos">A la medida</a>
+      <a href="#paginas">Páginas web</a>
+      <a href="#proceso">Cómo trabajamos</a>
       <a href="#contacto">Contacto</a>
       <a class="btn btn-solid btn-lg" href="#contacto">Agenda una demo</a>
     </div>
@@ -543,9 +541,8 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
   <section class="hero">
     <div class="wrap hero-in">
       <div>
-        <span class="eyebrow">Hecho en Colombia para negocios pequeños</span>
         <h1>Software de gestión para negocios que hoy lo hacen en cuaderno</h1>
-        <p>Construimos plataformas de calidad para emprendimientos y empresas pequeñas en Colombia, con suscripción mensual, sin costo de entrada y acompañamiento permanente.</p>
+        <p>Plataformas para emprendimientos y empresas pequeñas en Colombia. Pagas una mensualidad, sin costo de entrada, y te acompañamos siempre.</p>
         <div class="hero-cta">
           <a class="btn btn-solid btn-lg" href="#contacto">Agenda una demo</a>
           <a class="btn btn-ghost btn-lg" href="#productos">Ver productos</a>
@@ -582,35 +579,34 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
     <div class="wrap proof-in">
       <span class="proof-label">Ya operando con</span>
       <div class="proof-logos">
-        <a class="proof-logo" href="https://ingemedic.com.co" target="_blank" rel="noopener"><img src="logo-ingemedic.png" alt="Ingemedic de Colombia"></a>
-        <a class="proof-logo" href="https://cottaconsultores.sodet.co/" target="_blank" rel="noopener"><img src="logo-cotta.png" alt="Cotta &amp; Consultores"></a>
+        <a class="proof-logo" href="#modulos"><img src="logo-ingemedic.png" alt="Ingemedic de Colombia"></a>
+        <a class="proof-logo" href="#paginas"><img src="logo-cotta.png" alt="Cotta &amp; Consultores"></a>
       </div>
     </div>
   </div>
 
   <section id="modelo" class="tint">
-    <div class="wrap split">
-      <div>
+    <div class="wrap">
+      <div class="sec-head">
         <h2>La digitalización no debería ser un privilegio</h2>
-        <p class="lead">La mayoría de los negocios pequeños en Colombia sigue operando con WhatsApp, cuadernos y hojas de cálculo. No es por falta de interés: el software de gestión disponible está diseñado y tarifado para empresas grandes. Licencias costosas, implementaciones de meses y, una vez firmado el contrato, nadie que responda.</p>
-        <p class="lead" style="margin-top:18px">SODET existe para cerrar esa brecha.</p>
+        <p class="lead">El software de gestión suele estar hecho y cobrado para empresas grandes. Nosotros lo hacemos accesible para negocios pequeños.</p>
       </div>
-      <div>
-        <h2 style="font-size:23px;max-width:26ch">Un mismo modelo, aplicado a cada sector</h2>
-        <ul class="pill-list">
-          <li>
-            <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="#9B1F7E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M13 5l-7 7 7 7"/><path d="M19 5l-7 7 7 7"/></svg></span>
-            <span><strong>Costo de operación mínimo</strong>Arquitectura compartida donde cada cliente nuevo cuesta prácticamente cero. Por eso podemos cobrar poco sin bajar la calidad.</span>
-          </li>
-          <li>
-            <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="#9B1F7E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M13 5l-7 7 7 7"/><path d="M19 5l-7 7 7 7"/></svg></span>
-            <span><strong>Suscripción mensual, sin instalación</strong>El negocio se registra y empieza a operar el mismo día. Sin contratos largos ni cobros de entrada.</span>
-          </li>
-          <li>
-            <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="#9B1F7E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M13 5l-7 7 7 7"/><path d="M19 5l-7 7 7 7"/></svg></span>
-            <span><strong>Acompañamiento que no se acaba</strong>No desaparecemos después de la implementación. El soporte es parte del servicio, no un extra que se cotiza aparte.</span>
-          </li>
-        </ul>
+      <div class="why">
+        <div class="why-item">
+          <span class="why-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+          <h3>Precio accesible</h3>
+          <p>Una mensualidad que un negocio pequeño puede pagar, sin licencias costosas.</p>
+        </div>
+        <div class="why-item">
+          <span class="why-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+          <h3>Empiezas sin pagar entrada</h3>
+          <p>Sin costo de instalación ni contratos largos. Operas desde el primer día.</p>
+        </div>
+        <div class="why-item">
+          <span class="why-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <h3>Soporte siempre incluido</h3>
+          <p>No desaparecemos después de la implementación. Ayudarte es parte del servicio.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -619,7 +615,7 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
     <div class="wrap">
       <div class="sec-head">
         <h2>Cada sector tiene su propia operación</h2>
-        <p class="lead">Por eso no vendemos una herramienta genérica que el cliente tenga que adaptar. Identificamos actividades con procesos repetitivos y baja digitalización, y construimos sobre la misma base un producto que resuelve su operación completa.</p>
+        <p class="lead">Por eso hacemos productos pensados para la operación de cada uno, no herramientas genéricas que tengas que adaptar.</p>
       </div>
       <div class="cards">
 
@@ -674,50 +670,6 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
           </ul>
           <a class="btn card-cta tabi-btn" href="https://tabi.sodet.co/" target="_blank" rel="noopener">Conocer Tabi →</a>
         </article>
-
-        <article class="card">
-          <div class="prev" aria-hidden="true">
-            <div class="prev-side" style="background:#1B3564"><b class="on"></b><b></b><b></b><b></b></div>
-            <div class="prev-main">
-              <div class="prev-mini">
-                <u><s>Total equipos</s><q>1.704</q></u>
-                <u><s>En préstamo</s><q>340</q></u>
-              </div>
-              <div class="prev-bars"><i style="height:92%;background:#1B3564"></i><i style="height:64%;background:#1B3564"></i><i style="height:46%;background:#1B3564"></i><i style="height:34%;background:#1B3564"></i><i style="height:26%;background:#1B3564"></i><i style="height:18%;background:#1B3564"></i></div>
-            </div>
-          </div>
-          <span class="tag">A la medida</span>
-          <h3>Módulos adaptables</h3>
-          <p>Cuando tu operación no encaja en un producto estándar, la armamos sobre la misma base.</p>
-          <ul>
-            <li>Inventario con hoja de vida por equipo</li>
-            <li>Actas en PDF con firma digital</li>
-            <li>App para el equipo en ruta</li>
-            <li>Portal para tus clientes</li>
-          </ul>
-          <a class="btn btn-ghost card-cta" href="#modulos">Ver clientes →</a>
-        </article>
-
-        <article class="card">
-          <div class="prev web-prev" aria-hidden="true">
-            <div class="web-bar"><i></i><i></i><i></i><span>tuempresa.co</span></div>
-            <div class="web-body">
-              <div class="web-nav"><b></b><i></i><i></i><i></i><u></u></div>
-              <div class="web-hero"><span><strong></strong><strong class="short"></strong><em></em></span><div class="web-img"></div></div>
-            </div>
-          </div>
-          <span class="tag">Presencia digital</span>
-          <h3>Páginas web</h3>
-          <p>Un sitio propio, con tu marca y tu dominio, que explica lo que haces y convierte visitas en clientes.</p>
-          <ul>
-            <li>Diseño a la medida de tu marca</li>
-            <li>Se ve bien en celular y computador</li>
-            <li>Dominio propio</li>
-            <li>Formulario o WhatsApp para agendar</li>
-          </ul>
-          <a class="btn btn-ghost card-cta" href="#paginas">Ver proyectos →</a>
-        </article>
-
       </div>
     </div>
   </section>
@@ -725,9 +677,8 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
   <section id="modulos" class="tint">
     <div class="wrap">
       <div class="sec-head">
-        <span class="eyebrow">Módulos adaptables</span>
-        <h2>Sistemas hechos a la medida de cada operación</h2>
-        <p class="lead">Cuando un negocio no cabe en un producto estándar, armamos sus módulos sobre nuestra base. Estos son los clientes que ya trabajan así.</p>
+        <h2>Módulos a la medida de tu operación</h2>
+        <p class="lead">Cuando tu negocio no encaja en un producto estándar, construimos el sistema que necesita. Así lo hicimos con Ingemedic.</p>
       </div>
 
       <article class="case case-full">
@@ -791,9 +742,8 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
   <section id="paginas">
     <div class="wrap">
       <div class="sec-head">
-        <span class="eyebrow">Páginas web</span>
-        <h2>Sitios que presentan bien a tu negocio</h2>
-        <p class="lead">Diseñamos y publicamos la página de tu empresa con tu marca, tu dominio y una forma clara de que el cliente te contacte.</p>
+        <h2>Páginas web que traen clientes</h2>
+        <p class="lead">Diseñamos el sitio de tu empresa con tu marca y tu dominio, y con una forma clara de que el cliente te contacte. Así quedó el de Cotta.</p>
       </div>
 
       <article class="case case-rev">
@@ -837,7 +787,7 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
   <section id="proceso" class="tint">
     <div class="wrap">
       <div class="sec-head">
-        <h2>Cómo entra un negocio a trabajar con nosotros</h2>
+        <h2>Cómo trabajamos</h2>
         <p class="lead">Cuatro pasos. Ninguno cuesta antes de que el sistema esté funcionando.</p>
       </div>
       <div class="steps">
@@ -956,14 +906,14 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
         <div class="foot-col">
           <h4>Productos</h4>
           <a href="https://fasten.sodet.co/" target="_blank" rel="noopener">Fasten</a>
-          <a href="#modulos">Módulos a la medida</a>
+          <a href="#modulos">A la medida</a>
           <a href="#paginas">Páginas web</a>
           <a href="https://tabi.sodet.co/" target="_blank" rel="noopener">Tabi</a>
         </div>
         <div class="foot-col">
           <h4>Empresa</h4>
-          <a href="#modelo">Cómo lo hacemos</a>
-          <a href="#proceso">Proceso</a>
+          <a href="#modelo">Por qué SODET</a>
+          <a href="#proceso">Cómo trabajamos</a>
           <a href="#contacto">Contacto</a>
         </div>
         <div class="foot-col">
@@ -999,13 +949,13 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
 
   // Aparición suave al hacer scroll (se omite si el usuario pidió reducir movimiento).
   if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const items = document.querySelectorAll('.sec-head, .split > div, .card, .step, .cta, .proof-in');
+  const items = document.querySelectorAll('.sec-head, .why-item, .card, .case, .step, .cta, .proof-in');
   const io = new IntersectionObserver(entries => entries.forEach(en => {
     if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
   }), { rootMargin:'0px 0px -8% 0px' });
   items.forEach((el, i) => {
     el.classList.add('reveal');
-    el.style.transitionDelay = (el.matches('.card, .step') ? (i % 4) * 70 : 0) + 'ms';
+    el.style.transitionDelay = (el.matches('.card, .step, .why-item') ? (i % 4) * 70 : 0) + 'ms';
     io.observe(el);
   });
 })();
