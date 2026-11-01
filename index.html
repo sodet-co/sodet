@@ -268,39 +268,10 @@ h2{font-size:clamp(27px,3.1vw,38px);line-height:1.22;font-weight:500;letter-spac
 .ing-sign svg{display:block;width:100%;height:32px}
 .ing-phone-body u{text-decoration:none;text-align:center;font-size:8.5px;font-weight:500;color:#fff;background:var(--mint);border-radius:999px;padding:4px 0}
 
-.case-ba{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:44px 0 40px}
-.case-ba > div{border-radius:14px;padding:20px 22px}
-.ba-before{background:#FAF8FC;border:1px solid var(--lavender-deep)}
-.ba-after{background:#F1FBF8;border:1px solid #BFEBDD}
-.case-ba h4{font-size:15px;font-weight:600;margin:0 0 10px}
-.ba-before h4{color:var(--ink)}
-.ba-after h4{color:#0E7F64}
-.case-ba ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.case-ba li{font-size:14.5px;color:var(--ink);line-height:1.55;display:flex;gap:10px}
-.case-ba li::before{content:"";flex-shrink:0;width:6px;height:6px;border-radius:50%;margin-top:9px;background:#C9B8E0}
-.ba-after li::before{background:var(--mint)}
 
-.feat-title{font-size:20px;font-weight:500;margin:0 0 4px;letter-spacing:-.01em}
-.feat-hint{font-size:14px;color:var(--ink);margin:0 0 18px}
-.feat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;align-items:start}
-.feat{border:1px solid var(--lavender-deep);border-radius:12px;background:#FCFBFE;transition:border-color .2s,background .2s}
-.feat[open]{background:#fff;border-color:#C9B8E0}
-.feat summary{list-style:none;cursor:pointer;padding:14px 44px 14px 16px;position:relative}
-.feat summary::-webkit-details-marker{display:none}
-.feat summary::after{content:"";position:absolute;right:18px;top:20px;width:8px;height:8px;border-right:2px solid var(--violet);border-bottom:2px solid var(--violet);transform:rotate(45deg);transition:transform .2s}
-.feat[open] summary::after{transform:rotate(-135deg);top:24px}
-.feat summary:focus-visible{outline:3px solid var(--mint);outline-offset:2px;border-radius:12px}
-.feat summary strong{display:block;font-size:15px;font-weight:500;color:var(--plum)}
-.feat summary span{display:block;font-size:13.5px;color:var(--ink);line-height:1.5;margin-top:2px}
-.feat ul{list-style:none;margin:0;padding:0 16px 16px;display:grid;gap:7px}
-.feat li{font-size:13.5px;color:var(--ink);line-height:1.5;display:flex;gap:9px}
-.feat li::before{content:"";flex-shrink:0;width:5px;height:5px;border-radius:50%;background:var(--magenta);margin-top:8px}
+.feat-title{font-size:20px;font-weight:500;margin:44px 0 16px;padding-top:36px;border-top:1px solid var(--lavender-deep);letter-spacing:-.01em}
+.case-benefits{grid-template-columns:repeat(3,1fr);margin-bottom:0}
 
-.case-foot{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:32px;padding-top:24px;border-top:1px solid var(--lavender-deep)}
-.case-foot p{margin:0;font-size:14.5px;color:var(--ink);max-width:62ch}
-.case-foot b{color:var(--plum);font-weight:500}
-.case-chips{display:flex;gap:6px;flex-wrap:wrap}
-.case-chips i{font-style:normal;font-size:12.5px;color:#1B3564;background:#E6ECF6;border-radius:999px;padding:3px 11px}
 
 /* mock Ingemedic */
 .ing-body{display:flex;min-height:236px}
@@ -494,8 +465,8 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
   .case{grid-template-columns:1fr;gap:32px;padding:30px 24px}
   .case-rev .case-shot{order:0}
   .case-top{grid-template-columns:1fr;gap:36px}
+  .case-benefits{grid-template-columns:1fr 1fr}
   .ing-phone{right:-6px}
-  .feat-grid{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr;gap:30px 22px}
   .step:not(:last-child)::before{display:none}
   .cta{padding:48px 26px;border-radius:18px}
@@ -519,10 +490,8 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
   .proof-logos{justify-content:center;gap:28px}
   .card{padding:24px 20px 26px}
   .case{padding:24px 16px;border-radius:18px}
-  .case-mods{grid-template-columns:1fr}
+  .case-mods,.case-benefits{grid-template-columns:1fr}
   .case-stats{grid-template-columns:1fr;gap:10px}
-  .case-ba{grid-template-columns:1fr;margin:34px 0 32px}
-  .case-ba > div{padding:16px}
   .ing-phone{width:118px}
   .case h3{font-size:21px}
   .pill-list li{padding:16px}
@@ -767,10 +736,10 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
             <img class="case-logo" src="logo-ingemedic.png" alt="Ingemedic de Colombia">
             <span class="case-tag">Sector salud · Equipos biomédicos</span>
             <h3>Ingemedic de Colombia</h3>
-            <p>Alquilan y prestan equipos biomédicos (oxígeno medicinal, concentradores, CPAP y más) a EPS, IPS, instituciones y pacientes en casa. Todo se llevaba en hojas de cálculo y papel. Hoy la oficina crea el préstamo en minutos, el repartidor lo entrega desde el celular y recoge la firma del paciente con el dedo, y el acta en PDF queda lista al instante, con el formato de cada cliente.</p>
+            <p>Alquilan equipos biomédicos a EPS, IPS y pacientes en casa. Pasaron de hojas de cálculo y papel a un sistema donde la oficina, los repartidores y sus propios clientes trabajan con la misma información, al día.</p>
             <div class="case-stats">
-              <div><strong>+1.600</strong><span>equipos con trazabilidad completa</span></div>
-              <div><strong>3 en 1</strong><span>sitio web, panel de operación y portal de clientes</span></div>
+              <div><strong>+1.600</strong><span>equipos controlados en un solo lugar</span></div>
+              <div><strong>Al instante</strong><span>el acta en PDF, apenas el paciente firma</span></div>
               <div><strong>0</strong><span>actas en papel: se firman en el celular</span></div>
             </div>
             <a class="btn btn-ghost" href="https://www.ingemedic.com.co" target="_blank" rel="noopener">Conocer Ingemedic →</a>
@@ -805,126 +774,16 @@ footer{background:#fff;border-top:1px solid var(--lavender-deep);padding:52px 0 
           </div>
         </div>
 
-        <div class="case-ba">
-          <div class="ba-before">
-            <h4>Antes</h4>
-            <ul>
-              <li>Más de 1.600 equipos con código, serie y estado llevados a mano.</li>
-              <li>Cada EPS e IPS con su propio formato de acta, llenado en Word o Excel e impreso para firmar.</li>
-              <li>Entregas, recogidas y recargas a domicilio sin saber quién hizo qué ni cuándo.</li>
-              <li>Préstamos vencidos y recargas pendientes que se descubrían tarde.</li>
-            </ul>
-          </div>
-          <div class="ba-after">
-            <h4>Ahora</h4>
-            <ul>
-              <li>Toda la operación en la nube, desde el computador y el celular.</li>
-              <li>Actas firmadas en el celular y en PDF al instante, con el formato exacto de cada cliente.</li>
-              <li>Cada préstamo, recarga y mantenimiento queda en la hoja de vida del equipo.</li>
-              <li>Alertas que avisan antes de que un préstamo venza o se olvide una recarga.</li>
-            </ul>
-          </div>
+        <h4 class="feat-title">Lo que gana Ingemedic</h4>
+        <div class="case-mods case-benefits">
+          <div><strong>Sabe dónde está cada equipo</strong><span>Quién lo tiene, desde cuándo y todo lo que le ha pasado.</span></div>
+          <div><strong>Préstamos en minutos</strong><span>Y avisos antes de que uno venza o toque una recarga.</span></div>
+          <div><strong>Actas sin papel</strong><span>Se firman en el celular y salen en PDF con el formato de cada cliente.</span></div>
+          <div><strong>Entregas organizadas</strong><span>El repartidor ve su ruta del día y registra cada visita desde el celular.</span></div>
+          <div><strong>Clientes que consultan solos</strong><span>Cada EPS o IPS ve sus equipos sin tener que llamar a la oficina.</span></div>
+          <div><strong>Nada se pierde</strong><span>Cada acción queda registrada: quién la hizo y cuándo.</span></div>
         </div>
 
-        <h4 class="feat-title">Lo que hace la plataforma</h4>
-        <p class="feat-hint">Toca cada módulo para ver el detalle.</p>
-        <div class="feat-grid">
-          <details class="feat">
-            <summary><strong>Inventario de equipos</strong><span>Categorías, tipos y unidades, cada equipo con su hoja de vida.</span></summary>
-            <ul>
-              <li>Línea de tiempo por equipo: préstamos, recargas, cambios, mantenimientos y actas</li>
-              <li>Estados que cambian solos según la operación, sin desincronizarse</li>
-              <li>Código con consecutivo sugerido y aviso si ya existe</li>
-              <li>Exportación a Excel, hoja de vida en PDF y cargue masivo desde CSV</li>
-            </ul>
-          </details>
-          <details class="feat">
-            <summary><strong>Préstamos</strong><span>Asistente por pasos, en oficina o a domicilio.</span></summary>
-            <ul>
-              <li>Guarda un borrador si el proceso se interrumpe</li>
-              <li>Vigencia con aviso antes de vencer y opción de extenderla</li>
-              <li>Recargas periódicas: el sistema calcula la próxima</li>
-              <li>Recoger, recargar o cambiar equipos, cada acción con su acta</li>
-              <li>Historial completo y cierre automático al recoger todo</li>
-            </ul>
-          </details>
-          <details class="feat">
-            <summary><strong>Actas con firma digital</strong><span>Motor de plantillas propio con el formato de cada cliente.</span></summary>
-            <ul>
-              <li>Importa formatos desde Word y convierte los datos en campos</li>
-              <li>Editor visual con vista previa en vivo y firmas sobre la hoja</li>
-              <li>Firma con el dedo del paciente o familiar y del funcionario</li>
-              <li>PDF al instante, con el logo de la empresa y del cliente</li>
-              <li>Actas renovables y copias firmadas que no cambian si se edita la plantilla</li>
-            </ul>
-          </details>
-          <details class="feat">
-            <summary><strong>App del repartidor</strong><span>Tablero de entregas y una vista móvil para la ruta.</span></summary>
-            <ul>
-              <li>Tablero por iniciar, en ruta y completadas, con filtros</li>
-              <li>Visitas atrasadas, de hoy, de mañana y próximas, con llamada y mapa</li>
-              <li>Flujo guiado: iniciar, datos de quien recibe, formatos, firmas y listo</li>
-              <li>Al firmar, el préstamo, la recogida o la recarga se aplican solos</li>
-            </ul>
-          </details>
-          <details class="feat">
-            <summary><strong>Clientes y pacientes</strong><span>Hoja de vida de cada EPS, IPS o institución.</span></summary>
-            <ul>
-              <li>Equipos que tiene hoy y línea de tiempo en lenguaje natural</li>
-              <li>Informe del cliente descargable en PDF o Excel</li>
-              <li>Recoger, recargar o cambiar desde el cliente o el paciente</li>
-              <li>Logo por cliente en listados, informes y actas</li>
-            </ul>
-          </details>
-          <details class="feat">
-            <summary><strong>Mantenimientos</strong><span>Uno o varios equipos a la vez, con su acta en PDF.</span></summary>
-            <ul>
-              <li>Selector tipo mini-inventario para escoger los equipos</li>
-              <li>Listas de actividades configurables</li>
-              <li>El equipo vuelve al estado correcto al cerrar</li>
-            </ul>
-          </details>
-          <details class="feat">
-            <summary><strong>Dashboard y alertas</strong><span>Lo que requiere atención, con acciones directas.</span></summary>
-            <ul>
-              <li>Equipos por estado, clientes con más equipos y distribución por municipio</li>
-              <li>Préstamos vencidos o por vencer y recargas pendientes</li>
-              <li>Recoger, extender, programar recarga o posponer desde la alerta</li>
-              <li>Actividad reciente y novedades del sistema</li>
-            </ul>
-          </details>
-          <details class="feat">
-            <summary><strong>Portal de clientes</strong><span>Cada cliente consulta lo suyo sin llamar a la oficina.</span></summary>
-            <ul>
-              <li>Usuario y contraseña creados desde el panel</li>
-              <li>Ve sus equipos en préstamo, sus pacientes y sus mantenimientos</li>
-              <li>Y nada más: solo su propia información</li>
-            </ul>
-          </details>
-          <details class="feat">
-            <summary><strong>Seguridad y auditoría</strong><span>Roles, permisos y una bitácora de todo.</span></summary>
-            <ul>
-              <li>Roles por módulo: SuperAdmin, Administrador, Operador y Repartidor</li>
-              <li>Cada registro protegido según quién consulta</li>
-              <li>Sesiones con límite de tiempo y usuarios desactivables</li>
-              <li>Bitácora de quién hizo qué y cuándo, en frases legibles</li>
-            </ul>
-          </details>
-          <details class="feat">
-            <summary><strong>Sitio web público</strong><span>Un sitio nuevo que atrae clientes y mide cada contacto.</span></summary>
-            <ul>
-              <li>Portafolio de equipos, quiénes somos y contacto</li>
-              <li>SEO: títulos por página, sitemap y datos estructurados</li>
-              <li>Analítica propia de clics en WhatsApp y formularios, sin datos personales</li>
-              <li>Páginas legales conforme a la ley colombiana</li>
-            </ul>
-          </details>
-        </div>
-
-        <div class="case-foot">
-          <p><b>Pensado para el celular:</b> navegación inferior en móvil, modo oscuro, ayuda en cada módulo, tour guiado y manual en PDF.</p>
-          <div class="case-chips"><i>Next.js</i><i>Supabase</i><i>PDF en servidor</i><i>Mapas</i><i>Vercel</i></div>
-        </div>
       </article>
     </div>
   </section>
